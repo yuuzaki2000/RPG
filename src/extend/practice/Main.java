@@ -3,17 +3,16 @@ package extend.practice;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RPGMain {
+public class Main {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-
-		Human brave = new Brave();
-		Human fighter = new Fighter();
-		Human wizard = new Wizard();
-		Monster slime = new Slime();
-		Monster oak = new Oak();
-		Monster dragon = new Dragon();
+		
+		Human brave = new Brave("勇者",150,20);
+		Human fighter = new Fighter("戦士",200,30);
+		Human wizard = new Wizard("魔法使い",130,15);
+		Monster slime = new Slime("スライム",200,10);
+		Monster oak = new Oak("オーク",300,20);
+		Monster dragon = new Dragon("ドラゴン",300,30);
 
 		List<Human> HumanList = new ArrayList<Human>();
 		HumanList.add(brave);
