@@ -9,6 +9,7 @@ public class Wizard extends Human {
 		this.offensive = offensive;
 	}
 
+	@Override
 	public void attack(Living target) {
 		int damage = this.offensive * Rand.get(10);
 		System.out.println(this.name + "が" + this.means + "で攻撃！" + target.name + "に" + damage + "のダメージを与えた。");
